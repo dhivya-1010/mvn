@@ -1,0 +1,22 @@
+cmd
+java --version
+mvn --version
+
+mkdir pracMaven
+cd pracMaven
+
+mvn archetype:generate -DgroupId=com.example -DartifactId=AnotherApp -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+
+cd AnotherApp
+
+dir
+
+mvn clean package
+
+dir target
+
+copy target\AnotherApp.war C:\Users\kanak\Downloads\apache-tomcat-10.1.61-windows-x64\apache-tomcat-10.1.61\webapps\
+
+cd C:\Users\kanak\Downloads\apache-tomcat-10.1.61-windows-x64\apache-tomcat-10.1.61\bin
+
+catalina.bat run
