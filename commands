@@ -20,3 +20,8 @@ copy target\AnotherApp.war C:\Users\kanak\Downloads\apache-tomcat-10.1.61-window
 cd C:\Users\kanak\Downloads\apache-tomcat-10.1.61-windows-x64\apache-tomcat-10.1.61\bin
 
 catalina.bat run
+
+
+set "JAVA_HOME=C:\Program Files\Java\jdk-21"
+startup.bat
+catalina.bat run
